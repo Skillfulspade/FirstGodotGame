@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dm5gtcni6bcaq"]
+
+[ext_resource type="Script" uid="uid://do2gxrw87ai5q" path="res://_Scripts/DeathBarrier.gd" id="1_kj1fw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_onpgo"]
+size = Vector2(473, 116)
+
+[node name="Death Barrier" type="Area2D" unique_id=1489377224]
+script = ExtResource("1_kj1fw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1227292115]
+position = Vector2(226.5, 48)
+shape = SubResource("RectangleShape2D_onpgo")
+disabled = true
